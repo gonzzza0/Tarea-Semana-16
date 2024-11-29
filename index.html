@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 16 Brian</title>
+    <title>Tarea APIs Brian</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><Nav>Nombres</Nav></h1>
-    <ul id="userList"></ul>
+    <h1>Pokédex</h1>
+    <p>Busca un Pokémon por su nombre:</p>
+    <input type="text" id="pokemonName" placeholder="Ej: pikachu">
+    <button onclick="searchPokemon()">Buscar</button>
+
+    <div class="pokemon-info" id="pokemonInfo"></div>
+    <p class="error" id="errorMessage"></p>
 
     <script src="script.js"></script>
 </body>
